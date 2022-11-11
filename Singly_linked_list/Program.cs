@@ -30,7 +30,10 @@ namespace Singly_linked_list
             Console.Write("\nEnter the roll number of the student :");
             nim = Convert.ToInt32(Console.ReadLine());
             Console.Write("\nEnter the name off the student :");
-            
+            nm = Console.ReadLine();
+            Node newnode = new Node();
+            newnode.rollNumber = nim;
+            newnode.name = nm;
            
 
         }
