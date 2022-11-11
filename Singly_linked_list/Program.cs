@@ -136,6 +136,15 @@ namespace Singlly_linked_list
                     Console.WriteLine("5. EXIT");
                     Console.Write("\nEnter your choice (1-5) : ");
                     char ch = Convert.ToChar(Console.ReadLine());
+
+                    switch
+                        {
+                        case '1':
+                            {
+                                obj.addnode();
+                            }
+                            break;
+                    }
                 
                 }
             }
