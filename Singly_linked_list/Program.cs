@@ -136,8 +136,8 @@ namespace Singlly_linked_list
                     Console.WriteLine("5. EXIT");
                     Console.Write("\nEnter your choice (1-5) : ");
                     char ch = Convert.ToChar(Console.ReadLine());
-                   
-                    switch(ch)
+
+                    switch (ch)
                     {
                         case '1':
                             {
@@ -189,14 +189,26 @@ namespace Singlly_linked_list
                                     Console.WriteLine("\n Name : " + current.name);
                                 }
                             }
-
+                            break;
+                        case '5':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("\n Invalid option ");
+                                break;
+                            }
 
                     }
 
-                
                 }
+                catch (Exception)
+                {
+                    Console.WriteLine("\n Check for the value enterd");
+                }
+
             }
         }
     }
-   
 }
+          
+   
