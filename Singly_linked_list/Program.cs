@@ -136,15 +136,24 @@ namespace Singlly_linked_list
                     Console.WriteLine("5. EXIT");
                     Console.Write("\nEnter your choice (1-5) : ");
                     char ch = Convert.ToChar(Console.ReadLine());
-
-                    switch
-                        {
+                   
+                    switch(ch)
+                    {
                         case '1':
                             {
                                 obj.addnode();
                             }
                             break;
+                        case '2':
+                            {
+                                if (obj.listEmpty())
+                                {
+                                    Console.WriteLine("\n List is empty");
+                                    break;
+                                }
+                            }
                     }
+
                 
                 }
             }
